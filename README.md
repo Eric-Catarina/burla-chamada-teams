@@ -7,3 +7,7 @@ Disclaimer: Só use em aulas que você já está a frente da matéria.
 ```git clone https://github.com/Eric-Catarina/burla-chamada-teams.git```
 
 ```python3 ouvir_chamada.py```
+
+**O navegador deve ser o Mozilla Firefox**
+
+**O Teams deve ser a primeira aba**
