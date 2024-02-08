@@ -8,7 +8,7 @@ load_dotenv()
 
 
 def main():
-    # Inicializar Porcupine com a palavra-chave personalizada
+    # Inicializar Porcupine com a palavra-chave personalizada.
     porcupine = pvporcupine.create(
     access_key = os.getenv("ACCESS_KEY"), 
     keyword_paths=['./Chamada_pt_linux_v3_0_0.ppn'],
