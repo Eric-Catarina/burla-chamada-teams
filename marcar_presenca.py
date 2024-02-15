@@ -1,7 +1,7 @@
 import pyautogui
 import subprocess
 import time
-
+import random
 comando = "notify-send 'Chamada detectada' 'Executando script de marcação de presença...' --urgency=low "
 
 # Executa o comando
@@ -24,9 +24,17 @@ botao_responder = './BotaoResponder.png'
 #     pyautogui.click(botao_centro)
 # else:
 #     print("Botão não encontrado na tela.")
+
+
 pyautogui.moveTo(screenWidth- 150, screenHeight - 90 , duration=0.5, tween=pyautogui.easeInOutQuad)
 pyautogui.click()
 
+def GetRandomMessage():
+    strings = ["eu", "sim", "presente", "aqui"]
+    return random.choice(strings)
 time.sleep(15)
-pyautogui.write('sim', interval=0.03)
+
+messageToSend = GetRandomMessage()
+pyautogui.write(messageToSend, interval=0.03)
+
 pyautogui.press('enter')

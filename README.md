@@ -14,3 +14,4 @@ Disclaimer: Só use em aulas que você já está a frente da matéria.
 
 ![image](https://github.com/Eric-Catarina/burla-chamada-teams/assets/102993694/5769499b-8a2a-4969-8a8f-52414bc45cdf)
 Certifique-se de que o Porcupine esteja configurado para usar a entrada de áudio correta (no caso, o "Monitor de [nome do dispositivo]") nas suas configurações. Isso deve permitir que ele funcione com o áudio que está sendo reproduzido no seu sistema.
+
