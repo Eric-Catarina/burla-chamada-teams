@@ -15,17 +15,18 @@ pyautogui.hotkey('alt', '1')
 screenWidth, screenHeight = pyautogui.size()
 botao_responder = './BotaoResponder.png'
 
-botao_posicao = pyautogui.locateOnScreen(botao_responder, confidence=0)
+#botao_posicao = pyautogui.locateOnScreen(botao_responder)
 
 
-if botao_posicao is not None:
-    botao_centro = pyautogui.center(botao_posicao)
-    pyautogui.click(botao_centro)
-else:
-    print("Botão não encontrado na tela.")
-    pyautogui.moveTo(screenWidth- 150, screenHeight - 90 , duration=0.5, tween=pyautogui.easeInOutQuad)
-    pyautogui.click()
+# if botao_posicao is not None:
+#     print("Botão encontrado na tela.")
+#     botao_centro = pyautogui.center(botao_posicao)
+#     pyautogui.click(botao_centro)
+# else:
+#     print("Botão não encontrado na tela.")
+pyautogui.moveTo(screenWidth- 150, screenHeight - 90 , duration=0.5, tween=pyautogui.easeInOutQuad)
+pyautogui.click()
 
-time.sleep(10)
-pyautogui.write('presente', interval=0.03)
+time.sleep(15)
+pyautogui.write('sim', interval=0.03)
 pyautogui.press('enter')
